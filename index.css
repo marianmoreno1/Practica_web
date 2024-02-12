@@ -86,7 +86,7 @@ aside nav ul li a:hover {
 
 /* Contenido Principal */
 main {
-    margin-left: 15rem; /* Igual al ancho de la barra lateral */
+    margin-left: 20%; /* Igual al ancho de la barra lateral */
     padding: 1rem;
 }
 
@@ -152,7 +152,7 @@ button:hover{
 /*Pagina_entrenamientos*/
 
 nav ul {
-    list-style-type: none !important;
+    list-style-type: none;
 }
 
 /* Espacio adicional */
@@ -160,17 +160,17 @@ nav ul {
 #carrera-5k,
 #carrera-10k,
 #media-maraton {
-    margin-top: 2rem; /* Aumento del espacio entre planes de entrenamiento */
+    margin-top: 2rem; 
     margin-bottom: 2rem;
     color: rgb(52, 53, 50)
 }
 
 #media-maraton h3 {
-    margin-bottom: 1rem; /* Aumento del espacio entre la carrera y el inicio del plan */
+    margin-bottom: 1rem;
 }
 
 #tipos-carrera {
-    margin-top: 2rem; /* Espacio entre media maratón y tipos de carrera */
+    margin-top: 2rem; 
 }
 
 /* Estilos de Tabla */
@@ -231,7 +231,7 @@ th {
 }
 
 .boton-link {
-    padding: 0.625rem 1.25rem; /* equivalente a 10px 20px */
+    padding: 0.625rem 1.25rem; 
     background-color: #333;
     color: #fff;
     border: none;
@@ -269,12 +269,12 @@ th {
 
 /*Página de unirse al club*/
 .form-group {
-    margin-bottom: 1.25rem; /* equivalente a 20px */
+    margin-bottom: 1.25rem; 
 }
 
 label {
     display: block;
-    margin-bottom: 0.3125rem; /* equivalente a 5px */
+    margin-bottom: 0.3125rem; /
 }
 
 input[type="text"],
@@ -282,9 +282,9 @@ input[type="email"],
 input[type="tel"],
 select {
     width: 100%;
-    padding: 0.625rem; /* equivalente a 10px */
-    border: 0.0625rem solid #ccc; /* equivalente a 1px */
-    border-radius: 0.3125rem; /* equivalente a 5px */
+    padding: 0.625rem; 
+    border: 0.0625rem solid #ccc; 
+    border-radius: 0.3125rem; 
 }
 
 input[type="checkbox"] {
@@ -292,7 +292,7 @@ input[type="checkbox"] {
 }
 
 button{
-    padding: 0.625rem 1.25rem; /* equivalente a 10px 20px */
+    padding: 0.625rem 1.25rem; /
     background-color: #333;
     color: #fff;
     border: none;
@@ -306,10 +306,10 @@ footer {
     color: var(--verde-lima-claro);
     background-color: white;
     text-align: center;
-    width: calc(100% - 15rem); /* Asume que tu barra lateral tiene 15rem de ancho */
-    margin-left: 15rem; /* Desplaza el inicio del footer para alinearlo con el contenido principal */
+    width: calc(100% - 15rem); 
+    margin-left: 15rem; 
     padding: 0.5%;
-    box-sizing: border-box; /* Asegura que el padding no afecte al ancho total */
-    position: fixed; /* Elimina 'fixed' para que el footer esté al final del contenido, no fijo */
+    box-sizing: border-box; 
+    position: fixed; 
     bottom: 0;
 }
