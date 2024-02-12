@@ -26,3 +26,7 @@ La página web cuenta con una barra de navegación ubicada en la parte superior,
 
 - Unirse al Club: Página de registro para recibir actualizaciones y noticias del club.
 
+### Link a la web:
+https://marianmoreno1.github.io/Practica_web/index.html
+
+
