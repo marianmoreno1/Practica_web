@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Run & Rise - Equipamiento</title>
+</head>
+<body>
+    <header>
+        <h1>Run & Rise</h1>
+    </header>
+
+    <aside>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="planes-entrenamiento.html">Planes de Entrenamiento</a></li>
+                <li><a href="equipamiento.html">Nuestros Productos</a></li>
+                <li><a href="eventos.html">Próximas Carreras</a></li>
+                <li><a href="join.html">¡Unete a Nosotros!</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main>
+        <h1>Nuestros Productos</h1>
+        <div class="producto">
+            <img src="camiseta.jpg" alt="Camiseta">
+            <div class="detalles">
+                <h2>Camiseta - 15€</h2>
+                <div class="opciones">
+                    <label for="tallaCamiseta">Talla:</label>
+                    <select id="tallaCamiseta" name="tallaCamiseta">
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                    </select>
+                    <label for="cantidadCamiseta">Cantidad:</label>
+                    <input type="number" id="cantidadCamiseta" name="cantidadCamiseta" min="0" max="10">
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <img src="sudadera.jpg" alt="Sudadera">
+            <div class="detalles">
+                <h2>Sudadera - 25€</h2>
+                <div class="opciones">
+                    <label for="tallaSudadera">Talla:</label>
+                    <select id="tallaSudadera" name="tallaSudadera">
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                    </select>
+                    <label for="cantidadSudadera">Cantidad:</label>
+                    <input type="number" id="cantidadSudadera" name="cantidadSudadera" min="0" max="10">
+                </div>
+            </div>
+        </div>
+
+        <div class="producto">
+            <img src="calcetines.jpg" alt="Calcetines">
+            <div class="detalles">
+                <h2>Calcetines - 5€</h2>
+                <div class="opciones">
+                    <label for="tallaCalcetines">Talla:</label>
+                    <select id="tallaCalcetines" name="tallaCalcetines">
+                        <option value="36-39">36-39</option>
+                        <option value="40-43">40-43</option>
+                        <option value="44-47">44-47</option>
+                    </select>
+                    <label for="cantidadCalcetines">Cantidad:</label>
+                    <input type="number" id="cantidadCalcetines" name="cantidadCalcetines" min="0" max="10">
+                </div>
+            </div>
+        </div>
+
+        <a href="https://www.paypal.com/signin" class="boton-link">Comprar</a>
+
+    </main>
+
+    <footer>
+        <p> @Corre Por Ti</p> 
+    </footer>
+</body>
+</html>

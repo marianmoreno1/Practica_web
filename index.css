@@ -1,0 +1,315 @@
+/* Variables Globales */
+:root {
+    --gris-antracita: #848282; /* Gris oscuro */
+    --verde-lima-claro: #b8e146; /* Verde lima claro */
+}
+
+/* Reset y Reglas Generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Facilita el cálculo de los tamaños */
+}
+
+/* Estilos Base del Documento */
+body{
+    height: 100%;
+    margin-top: 10%; /* Espacio debajo del header */
+    margin-bottom: 10%;
+    text-align: center; /* Centra el contenido del texto */
+}
+
+/* Header y Estilos de Título */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 10%;
+    background-image: url('banner.jpg');
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el encabezado */
+    color: black;
+    border-bottom: 2px solid black;
+    z-index: 1000;
+    padding: 0.5rem 1rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem; 
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    aside {
+        width: 100%; /* Ajusta el ancho de la barra lateral para ocupar toda la pantalla */
+        padding-top: 3rem; /* Reduce el espacio superior para evitar que ocupe demasiado espacio en la pantalla móvil */
+    }
+
+    main {
+        margin-left: 0; /* Elimina el margen izquierdo para que el contenido principal se expanda a lo ancho de la pantalla */
+    }
+
+    footer {
+        width: 100%; /* Ajusta el ancho del footer para ocupar toda la pantalla */
+        margin-left: 0; /* Elimina el margen izquierdo para que el footer se alinee correctamente con el contenido principal */
+    }
+}
+
+
+/* Barra Lateral y Navegación */
+aside {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 12rem; 
+    height: 100%;
+    background-color: var(--gris-antracita);
+    padding-top: 5rem; /* Espacio para no solaparse con el header */
+    text-align: left;
+}
+
+aside nav ul {
+    list-style-type: none;
+}
+
+aside nav ul li a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+aside nav ul li a:hover {
+    background-color: #c4ec98; /* Un verde más claro para el hover */
+    color: var(--gris-antracita);
+}
+
+/* Contenido Principal */
+main {
+    margin-left: 15rem; /* Igual al ancho de la barra lateral */
+    padding: 1rem;
+}
+
+/* Generales*/
+
+p {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    margin-top: 1rem;
+    margin-bottom: 1.2rem;
+}
+
+h3 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: left;
+    color: var(--gris-antracita);
+    text-decoration: underline;
+
+}
+
+
+h4 {
+    margin-top: 1rem;
+    color: rgb(83, 167, 35);
+    font-size: 1.2rem;
+}
+
+button:hover{
+    background-color: var(--verde-lima-claro);
+    color: var(--gris-antracita);
+}
+/*pagina_inicial*/
+
+/* Estilos de Texto de Introducción */
+.introduction-text {
+    max-width: 80%;
+    margin: 0 auto;
+    font-size: medium;
+    text-align: center;
+}
+
+.introduction-text p {
+    margin-bottom: 1rem;
+}
+
+/* Estilos de Imagen */
+.logo-container img {
+    max-width: 60%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/*Pagina_entrenamientos*/
+
+nav ul {
+    list-style-type: none !important;
+}
+
+/* Espacio adicional */
+#planes-entrenamiento,
+#carrera-5k,
+#carrera-10k,
+#media-maraton {
+    margin-top: 2rem; /* Aumento del espacio entre planes de entrenamiento */
+    margin-bottom: 2rem;
+    color: rgb(52, 53, 50)
+}
+
+#media-maraton h3 {
+    margin-bottom: 1rem; /* Aumento del espacio entre la carrera y el inicio del plan */
+}
+
+#tipos-carrera {
+    margin-top: 2rem; /* Espacio entre media maratón y tipos de carrera */
+}
+
+/* Estilos de Tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+th {
+    background-color: #f4f4f4;
+    color: rgb(128, 169, 67);
+}
+
+/* Equipamiento */
+
+.producto {
+    margin-bottom: 20px;
+    width: 300px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+}
+
+.detalles {
+    padding: 20px;
+}
+
+.opciones {
+    margin-bottom: 20px;
+}
+
+.opciones label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.opciones select,
+.opciones input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.boton-link {
+    padding: 0.625rem 1.25rem; /* equivalente a 10px 20px */
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 0.3125rem;
+    margin: 0 auto;
+    font-size: 1em;
+    width: 20%;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.boton-link:hover {
+    background-color: var(--verde-lima-claro);
+    color: var(--gris-antracita);
+}
+
+
+/*Pagina eventos*/
+
+/* Estilos de Imagen */
+.carreras {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    text-align: left;
+ 
+}
+
+.calendario {
+    text-align:left;
+}
+
+
+/*Página de unirse al club*/
+.form-group {
+    margin-bottom: 1.25rem; /* equivalente a 20px */
+}
+
+label {
+    display: block;
+    margin-bottom: 0.3125rem; /* equivalente a 5px */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+    width: 100%;
+    padding: 0.625rem; /* equivalente a 10px */
+    border: 0.0625rem solid #ccc; /* equivalente a 1px */
+    border-radius: 0.3125rem; /* equivalente a 5px */
+}
+
+input[type="checkbox"] {
+    margin-right: 0.3125rem; 
+}
+
+button{
+    padding: 0.625rem 1.25rem; /* equivalente a 10px 20px */
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 0.3125rem; 
+    cursor: pointer;
+}
+
+
+/* Footer */
+footer {
+    color: var(--verde-lima-claro);
+    background-color: white;
+    text-align: center;
+    width: calc(100% - 15rem); /* Asume que tu barra lateral tiene 15rem de ancho */
+    margin-left: 15rem; /* Desplaza el inicio del footer para alinearlo con el contenido principal */
+    padding: 0.5%;
+    box-sizing: border-box; /* Asegura que el padding no afecte al ancho total */
+    position: fixed; /* Elimina 'fixed' para que el footer esté al final del contenido, no fijo */
+    bottom: 0;
+}
