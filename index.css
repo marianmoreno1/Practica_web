@@ -51,6 +51,7 @@ header h1 {
 
     footer {
         width: 100%; /* Ajusta el ancho del footer para ocupar toda la pantalla */
+        text-align: center;
         margin-left: 0; /* Elimina el margen izquierdo para que el footer se alinee correctamente con el contenido principal */
     }
 }
